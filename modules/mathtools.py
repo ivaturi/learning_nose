@@ -48,9 +48,11 @@ def factorial(n):
     
 
 def fibonacci(n):
-    if n <= 2:
-        return []
-    arr = [0,1]    
-    while len(arr) < n:
-        arr.append(arr[len(arr)-1] + arr[len(arr)-2])
-    return arr
+    def fib(n):
+        if n == 0:
+            return 0
+        elif n == 1:
+            return 1
+        else:
+            return fib(n-1) + fib(n-2)
+    return map(fib, range(0,n))
