@@ -1,6 +1,8 @@
 
-# Testing docstrings
+
 """
+> Testing docstrings
+--------------------
 nose can detect and run doctests.
 to use this, however, the tests to be run must be part of a package
 as a module.
@@ -33,3 +35,14 @@ def multiply(a,b):
     15.0
     """
     return a*b
+
+
+def add(a,b):
+    return a+b
+
+def factorial(n):
+    if n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+    
