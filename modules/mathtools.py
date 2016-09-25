@@ -46,3 +46,15 @@ def factorial(n):
     else:
         return n * factorial(n-1)
     
+
+def fibonacci(n):
+    arr = [1]
+    if n == 1:
+        return arr
+    elif n==2:
+        arr.append(2)
+        return arr
+    else:
+        while len(arr) < n:
+            arr.append(arr[len(arr)-1] + arr[len(arr)-2])
+        return arr
