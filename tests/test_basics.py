@@ -8,7 +8,7 @@ several test methods
 
 # basic testing
 # nose looks for 'test_' methods, and runs them
-def test_func():
+def test_b_equals_b():
     assert 'b' == 'b'
 
 
@@ -16,8 +16,8 @@ def test_func():
 #
 # In this case, nose will create an instance of TestExample,
 # and only then run the test_c function
-class TestExample:
-    def test_c(self):
+class TestClass:
+    def test_c_equals_c(self):
         assert 'c' == 'c'
 
 """
