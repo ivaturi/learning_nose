@@ -4,6 +4,17 @@
 nose can detect and run doctests.
 to use this, however, the tests to be run must be part of a package
 as a module.
+
+To run nose with doctests, use the flag
+
+    --with-doctest 
+
+
+By default, nose only looks for doctests in non-test code.
+nose can be configured to look for doctests in test code too, with the flag
+
+    --doctest-tests
+
 """
 
 def multiply(a,b):
