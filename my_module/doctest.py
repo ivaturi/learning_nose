@@ -1,5 +1,10 @@
 
 # Testing docstrings
+"""
+nose can detect and run doctests.
+to use this, however, the tests to be run must be part of a package
+as a module.
+"""
 
 def multiply(a,b):
     """
