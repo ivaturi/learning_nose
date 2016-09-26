@@ -1,4 +1,5 @@
 # http://ivory.idyll.org/articles/nose-intro.html
+from nose.plugins.attrib import attr
 
 """
 Most tests should take one of the following forms.
@@ -8,17 +9,23 @@ several test methods
 
 # basic testing
 # nose looks for 'test_' methods, and runs them
+@attr(type='basic')
 def test_b_equals_b():
     assert 'b' == 'b'
+
 
 
 # a slightly more complicated example:
 #
 # In this case, nose will create an instance of TestExample,
 # and only then run the test_c function
+@attr(type='basic')
 class TestClass:
     def test_c_equals_c(self):
         assert 'c' == 'c'
+
+
+
 
 """
 Basics of unit testing
